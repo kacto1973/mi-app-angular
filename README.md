@@ -1,59 +1,36 @@
-# MiApp
+# Mi Primer Componente en Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli).
 
-## Development server
+## Descripción de la Práctica
 
-To start a local development server, run:
+El objetivo de esta práctica es crear un componente en Angular que sirva como una tarjeta de presentación personalizable. 
 
-```bash
-ng serve
-```
+El componente creado (`TarjetaComponent`) cumple con los siguientes criterios:
+- Tiene su propio selector (`app-tarjeta`), plantilla HTML y estilos CSS.
+- Utiliza la directiva `@Input()` para recibir los datos de entrada (como el **nombre** y la **edad**).
+- Maneja eventos a través de bindings como `(click)` para actualizar un contador de "Likes".
+- Hace uso de interpolación `{{ }}` en su plantilla para reflejar la información de forma dinámica en la pantalla.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Requisitos Previos
+- Tener [Node.js](https://nodejs.org/) instalado.
+- Tener Angular CLI instalado globalmente: `npm install -g @angular/cli`
 
-## Code scaffolding
+## Cómo ejecutar el proyecto
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Para echar a andar este proyecto en tu computadora, sigue estos pasos:
 
-```bash
-ng generate component component-name
-```
+1. **Clonar este repositorio** o descargar los archivos.
+2. Abre una terminal (Línea de Comandos o PowerShell) dentro de la carpeta del proyecto.
+3. Instala las dependencias del proyecto ejecutando el siguiente comando:
+   ```bash
+   npm install
+   ```
+4. Una vez instaladas las dependencias y sin errores, inicia el servidor de desarrollo local ejecutando:
+   ```bash
+   ng serve
+   ```
+5. Al terminar de compilar, abre tu navegador web de preferencia y dirígete a:
+   [http://localhost:4200/](http://localhost:4200/)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Cualquier cambio que realices en el código fuente causará que la página en el navegador se recargue automáticamente.
