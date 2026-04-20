@@ -1,0 +1,11 @@
+<div class="tarjeta-container">
+  <h2>Tarjeta de Presentación</h2>
+  <div class="info">
+    <p><strong>Nombre:</strong> {{ nombre }}</p>
+    <p><strong>Edad:</strong> {{ edad }} años</p>
+  </div>
+  <div class="likes-section">
+    <button (click)="incrementarLikes()">👍 Me gusta</button>
+    <span class="likes-count">{{ likes }} Likes</span>
+  </div>
+</div>
